@@ -1,5 +1,5 @@
-let index = 0,
-    interval = 1000;
+let index_ = 0,
+    interval_ = 1000;
 
 const rand = (min, max) => 
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -18,5 +18,5 @@ for(const star of document.getElementsByClassName("magic-star")) {
     animate(star);
     
     setInterval(() => animate(star), 1000);
-  }, index++ * (interval / 3))
+  }, index_++ * (interval_ / 3))
 }

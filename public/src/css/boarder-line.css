@@ -1,0 +1,45 @@
+
+.container { 
+    z-index: 1;
+}
+
+  .container #boarder-line .boarder-effect {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+  }
+ 
+  .container #boarder-line .boarder-effect:before, .container #boarder-line .boarder-effect:after {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    content: "";
+  }
+  .container #boarder-line .boarder-effect:after {
+    background-color: white;
+    border-radius: 13px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+  }
+  .container #boarder-line .boarder-effect:before {
+    animation: loading-indicator-rotation 3s linear infinite;
+    background: #03a9f4;
+    
+  }
+
+  .container #boarder-line .boarder-effect:before {
+    background: linear-gradient(to right, #ff6f00 50%, #03a9f4 50%);
+    
+  }
+  
+  @keyframes loading-indicator-rotation {
+    from {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
