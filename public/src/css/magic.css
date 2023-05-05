@@ -34,7 +34,7 @@
     }
   }
   
-
+/* 
   h1 {
     color: white;
     font-family: "Rubik", sans-serif;
@@ -43,14 +43,14 @@
     margin: 0px;
     padding: 10px;
     text-align: center;
-  }
+  } */
   
-  h1 > .magic {
+  .magic {
     display: inline-block;
     position: relative;
   }
   
-  h1 > .magic > .magic-star {
+  .magic > .magic-star {
     --size: clamp(20px, 1.5vw, 30px);
     
     animation: scale 700ms ease forwards;
@@ -62,17 +62,17 @@
     width: var(--size);
   }
   
-  h1 > .magic > .magic-star > svg {
+  .magic > .magic-star > svg {
     animation: rotate 1000ms linear infinite;
     display: block;
     opacity: 0.7;
   }
   
-  h1 > .magic > .magic-star > svg > path {
+  .magic > .magic-star > svg > path {
     fill: var(--violet);
   }
   
-  h1 > .magic > .magic-text {
+   .magic > .magic-text {
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
       to right,
