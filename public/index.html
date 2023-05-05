@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/css/card.css" />
     <link rel="stylesheet" href="./src/css/magic.css" />
     <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/f-card.css" />
@@ -68,6 +69,100 @@
         Dear Sandra, I hope this website makes your birthday extra special. Here
         are some of my favorite memories and wishes for you:
       </p>
+
+      <!-- Cards swiper -->
+      <div id="card">
+        <div class="card-swiper">
+          <div class="card-groups">
+            <div class="card-group" data-index="0" data-status="active">
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+            </div>
+            <div class="card-group" data-index="1" data-status="unknown">
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+            </div>
+            <div class="card-group" data-index="2" data-status="unknown">
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+              <div class="little-card card">
+        
+              </div>
+              <div class="big-card card">
+        
+              </div>
+            </div>
+          </div>
+          <div class="card-swiper-buttons">
+            <button id="hate-button" onclick="handleHateClick()">
+              <i class="fa-solid fa-x"></i>
+            </button>
+            <button id="love-button" onclick="handleLoveClick()">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
 
       <!-- Photos -->
       <div class="photo-gallery">
@@ -160,6 +255,7 @@
     <script type="text/javascript" src="./src/js/script.js"></script>
     <script type="text/javascript" src="./src/js/f-card.js"></script>
     <script type="text/javascript" src="./src/js/magic.js"></script>
+    <script type="text/javascript" src="./src/js/cards.js"></script>
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD65X89ZQ5"></script>
 <script>
