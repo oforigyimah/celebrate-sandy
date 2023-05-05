@@ -35,24 +35,22 @@ const randAssign = () => {
     littleCard3,
     littleCard4
   ];
-  let i = 0;
-  window.onload = function() {
-  
+  let i = 0;  
   cards.forEach(card => {
-    card.style.backgroundImage = pictures[i];
+    card.style.cssText = `background-image: ${pictures[i]}`;
     i++;
   });
-};
-  
 }
 
-randAssign();
+
 
 let activeIndex = 0;
+let spaceIndex = 1;
 
 const groups = document.getElementsByClassName("card-group");
 
 const handleLoveClick = () => {
+  spaceIndex++;
   const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
   
   const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
@@ -62,8 +60,9 @@ const handleLoveClick = () => {
   
   nextGroup.dataset.status = "becoming-active-from-before";
  
-  if (activeIndex === 2)
+  if (spaceIndex % 3 === 0)
   {
+    console.log("Hello world");
     randAssign();
   }
   
@@ -74,6 +73,7 @@ const handleLoveClick = () => {
 }
 
 const handleHateClick = () => {
+  spaceIndex--;
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
   
   const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),

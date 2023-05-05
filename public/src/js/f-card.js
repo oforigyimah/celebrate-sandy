@@ -1,29 +1,29 @@
 /* -- Text effect -- */
-
+let interval = null;
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
 
 
 const screen = document.querySelector(".f-card-in");
-const  name = document.querySelector(".note");
+const  note = document.querySelector(".note");
 
 screen.onmouseenter = event => {  
   let iteration = 0;
   
   clearInterval(interval);
   
-  var interval = setInterval(() => {
-    name.innerText = name.innerText
+  interval = setInterval(() => {
+    note.innerText = note.innerText
       .split("")
       .map((letter, index) => {
         if(index < iteration) {
-          return name.dataset.value[index];
+          return note.dataset.value[index];
         }
       
         return letters[Math.floor(Math.random() * 27)]
       })
       .join("");
     
-    if(iteration >= name.dataset.value.length){ 
+    if(iteration >= note.dataset.value.length){ 
       clearInterval(interval);
     }
     
@@ -33,24 +33,24 @@ screen.onmouseenter = event => {
 
 let isAnimating = false;
 
-function animateName() {
+function animatenote() {
   let iteration = 0;
   
   clearInterval(interval);
   
   interval = setInterval(() => {
-    name.innerText = name.innerText
+    note.innerText = note.innerText
       .split("")
       .map((letter, index) => {
         if(index < iteration) {
-          return name.dataset.value[index];
+          return note.dataset.value[index];
         }
       
         return letters[Math.floor(Math.random() * 27)]
       })
       .join("");
     
-    if(iteration >= name.dataset.value.length){ 
+    if(iteration >= note.dataset.value.length){ 
       clearInterval(interval);
       isAnimating = false;
     }
@@ -65,7 +65,7 @@ function handleScroll() {
   
   if (middlePosition >= screen.offsetTop && middlePosition <= (screen.offsetTop + screen.offsetHeight)) {
     if (!isAnimating) {
-      animateName();
+      animatenote();
       isAnimating = true;
     }
   }
