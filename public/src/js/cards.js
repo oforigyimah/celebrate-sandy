@@ -36,10 +36,13 @@ const randAssign = () => {
     littleCard4
   ];
   let i = 0;
+  window.onload = function() {
+  
   cards.forEach(card => {
     card.style.backgroundImage = pictures[i];
     i++;
   });
+};
   
 }
 
