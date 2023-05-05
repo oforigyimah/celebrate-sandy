@@ -1,9 +1,9 @@
 :root {
-	--primary: rgb(0,255,0);
-	--primary-light: #212d37;
-	--secondary: #0ee951;
-	--tertiary: #00dabf;
-	--gradient: linear-gradient(to right, pink, rgb(202, 152, 55));
+	--primary: #FF69B4;
+	--primary-light: #FF6999;
+	--secondary: #69FFB4;
+	--tertiary: #CFAA35;
+	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
 }
 
 button {

@@ -1,7 +1,16 @@
+:root {
+	--primary: #FF69B4;
+	--primary-light: #FF6999;
+	--secondary: #69FFB4;
+	--tertiary: #CFAA35;
+	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
+	--background-gradient: linear-gradient(to right, #F7DBD7, #EEEEEE, #FCFCFC, #FAEACB, #F7DBD7);
+}
+
+
 /* Basic styles */
 body {
 	font-family: 'Poppins', sans-serif;
-	background-color: #F5F5F5;
 }
 
 h2 {
@@ -10,7 +19,7 @@ h2 {
 
 .container {
 	padding: 20px;
-	background-color: #FFF;
+	background-image: var(--background-gradient);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 

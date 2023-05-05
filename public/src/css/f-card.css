@@ -1,10 +1,14 @@
 :root {
   --background-rgb: 255 255 255;
-  
   --gold-rgb: 212 175 55;
   --primary-rgb: var(--gold-rgb);
-  
+	--primary: #FF69B4;
+	--primary-light: #FF6999;
+	--secondary: #69FFB4;
+	--tertiary: #CFAA35;
+	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
 }
+
 
 * {
   box-sizing: border-box;

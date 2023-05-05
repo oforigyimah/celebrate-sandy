@@ -1,3 +1,12 @@
+:root {
+	--primary: #FF69B4;
+	--primary-light: #FF6999;
+	--secondary: #69FFB4;
+	--tertiary: #CFAA35;
+	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
+}
+
+
 #card {  
     margin: 0px;  
     height: 75vh;
