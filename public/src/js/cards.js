@@ -1,7 +1,7 @@
-let pictures = [];
+const pictures = [];
 
 for (let i = 1; i < 43; i++){
-    pictures.push(`sandy${i}.jpg`)
+    pictures.push(`url(/public/src/img/sandy${i}.jpg)`)
 }
 
 
@@ -12,9 +12,38 @@ function shuffleArray(array) {
     }
   }
   
-console.log(pictures);
-shuffleArray(pictures);
-console.log(pictures);
+
+const randAssign = () => {
+  shuffleArray(pictures);
+
+  let bigCard1 = document.querySelector('.big-card:nth-child(2)');
+  let bigCard2 = document.querySelector('.big-card:nth-child(4)');
+  let bigCard3 = document.querySelector('.big-card:nth-child(6)');
+  let bigCard4 = document.querySelector('.big-card:nth-child(8)');
+  let littleCard1 = document.querySelector('.little-card:nth-child(1)');
+  let littleCard2 = document.querySelector('.little-card:nth-child(3)');
+  let littleCard3 = document.querySelector('.little-card:nth-child(5)');
+  let littleCard4 = document.querySelector('.little-card:nth-child(7)');
+
+  let cards = [
+    bigCard1,
+    bigCard2, 
+    bigCard3, 
+    bigCard4,
+    littleCard1,
+    littleCard2,
+    littleCard3,
+    littleCard4
+  ];
+  let i = 0;
+  cards.forEach(card => {
+    card.style.backgroundImage = pictures[i];
+    i++;
+  });
+  
+}
+
+randAssign();
 
 let activeIndex = 0;
 
@@ -29,6 +58,11 @@ const handleLoveClick = () => {
   currentGroup.dataset.status = "after";
   
   nextGroup.dataset.status = "becoming-active-from-before";
+ 
+  if (activeIndex === 2)
+  {
+    randAssign();
+  }
   
   setTimeout(() => {
     nextGroup.dataset.status = "active";
@@ -51,3 +85,4 @@ const handleHateClick = () => {
     activeIndex = nextIndex;
   });
 }
+
