@@ -32,7 +32,7 @@ h1 {
 }
 
 .photo-gallery img {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	object-fit: cover;
 	margin: 10px;
@@ -92,6 +92,45 @@ h1 {
 
 .bottom {
   	background-color: black;
+}
+
+
+/* Gradient Border And Background On Icons */
+.home_text,
+.home .fas,
+.plans .far,
+.information .fas,
+.work .fas,
+.services .fas,
+.location .far,
+.location .fas {
+	padding: 15px 0;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.navbar-nav a:hover,
+.footer a:hover,
+.footer .fab:hover {
+	cursor: pointer;
+	background: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.img-fluid {
+	height: 110vh;
+	position: absolute;
+	right: 0;
 }
 
 /* Media queries */
