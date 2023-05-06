@@ -1,12 +1,14 @@
 :root {
-  --background-rgb: 255 255 255;
-  --gold-rgb: 212 175 55;
-  --primary-rgb: var(--gold-rgb);
-	--primary: #FF69B4;
-	--primary-light: #FF6999;
-	--secondary: #69FFB4;
-	--tertiary: #CFAA35;
-	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
+	--background-primary : #fec7d7;
+	--paragraph : #0e172c;
+	--headline : #0e172c;
+	--button-text : #fffffe;
+	--main : #f9f8fc;
+	--secondary: #d9d4e7;
+	--tertiary- : #a786df;
+	--icon-primary: #f9f8fc;
+	--icon-secondary: #fec7d7;
+	--background-tertiary: #0e172c;
 }
 
 
@@ -18,7 +20,6 @@
   height: 100vh;
   display: grid;
   place-items: center;
-  background-color: rgb(var(--background-rgb));
   margin: 0rem;
   overflow: hidden;
 }
@@ -26,10 +27,10 @@
 .f-card-in {
   min-width: 300px;
   display: flex;
-  border: 3px solid rgb(var(--primary-rgb) / 80%);
+  border: 3px solid var(--tertiary-) ;
   aspect-ratio: 10 / 16;
   border-radius: 1rem;
-  background-color: rgb(var(--primary-rgb) / 15%);
+  background-color: var(--main);
   overflow: hidden;
   position: relative;
   z-index: 10;
@@ -71,8 +72,8 @@
 }
   .f-card-overlay {    
     background: linear-gradient(
-      rgb(var(--primary-rgb) / 0.15),
-      rgb(var(--primary-rgb) / 0.15) 3px,
+      var(--background-primary),
+      var(--tertiary-)3px,
       transparent 3px,
       transparent 9px
     );
@@ -192,7 +193,7 @@
     align-items: center;
     gap: 1rem;
     position: relative;
-    color: pink
+    color: var(--headline)
   }
   
   .f-card-in > .f-card-content > .f-card-note:before,
@@ -220,7 +221,7 @@
   
   .f-card-in > .f-card-content > .f-card-note > :is(.note) {
     font-family: "Source Code Pro", monospace;
-    color: pink; 
+    color: var(--headline); 
     text-align: center;
     text-transform: uppercase; 
   }

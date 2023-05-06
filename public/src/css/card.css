@@ -1,16 +1,24 @@
 :root {
-	--primary: #FF69B4;
-	--primary-light: #FF6999;
-	--secondary: #69FFB4;
-	--tertiary: #CFAA35;
-	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
+	--background-primary : #fec7d7;
+	--paragraph : #0e172c;
+	--headline : #0e172c;
+	--button-text : #fffffe;
+	--main : #f9f8fc;
+	--secondary: #d9d4e7;
+	--tertiary- : #a786df;
+	--icon-primary: #f9f8fc;
+	--icon-secondary: #fec7d7;
+	--background-tertiary: #0e172c;
 }
 
 
+.card_ {
+  background-color: var(--background-primary);
+  height: 110vh;
+}
+
 #card {  
-    margin: 0px;  
-    height: 75vh;
-    
+    margin-top: 30vh;  
     display: grid;
     place-items: center;
   }
@@ -24,7 +32,7 @@
   .card-groups,
   .card-group,
   .big-card {  
-    width: 30vmin;
+    width: 33vmin;
   }
   
   .card-group {
@@ -178,28 +186,22 @@
   }
   
   .card-swiper-buttons > button {
-    font-size: 2.5vmin;
+    font-size: 4vmin;
     border: 0.4vmin solid rgb(200, 200, 200);
     border-radius: 100%;
     color: white;
     background-color: transparent;
-    height: 7vmin;
-    width: 7vmin;
+    height: 10vmin;
+    width: 10vmin;
     display: grid;
     place-items: center;
     cursor: pointer;
   }
   
   #love-button {
-    border-color: rgb(212, 152, 55);
+    border-color: var(--tertiary-);
   }
 
   #hate-button {
-    border-color: rgb(244, 152, 202)
-  }
-
-  @media only screen and (max-width: 768px){
-    #card{
-      height: 50vh;
-    }
+    border-color: var(--paragraph);
   }

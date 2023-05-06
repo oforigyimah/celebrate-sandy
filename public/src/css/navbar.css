@@ -1,17 +1,22 @@
 :root {
-	--primary: #FF69B4;
-	--primary-light: #FF6999;
-	--secondary: #69FFB4;
-	--tertiary: #CFAA35;
-	--gradient: linear-gradient(to right, var(--primary), var(--secondary), var(--tertiary));
+	--background-primary : #fec7d7;
+	--paragraph : #0e172c;
+	--headline : #0e172c;
+	--button-text : #fffffe;
+	--main : #f9f8fc;
+	--secondary: #d9d4e7;
+	--tertiary : #a786df;
+	--icon-primary: #f9f8fc;
+	--icon-secondary: #fec7d7;
+	--background-tertiary: #0e172c;
 }
+
 
 button {
 	font-family: sans-serif;
 }
 
 a {
-	color: black;
 	text-decoration: none;
 }
 
@@ -23,7 +28,7 @@ li {
 .footer a:hover,
 .footer .fab:hover {
 	cursor: pointer;
-	background: var(--gradient);
+	background: var(--main);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -36,7 +41,7 @@ li {
 	font-weight: 400;
 	font-size: 0.775rem;
 	line-height: 0.875rem;
-	background-color: var(--primary);
+	background-color: var(--background-primary);
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
 
@@ -51,7 +56,7 @@ li {
 }
 
 .navbar .logo-text {
-	color: pink;
+	color: var(--paragraph);
 	font-weight: 600;
 	line-height: 1rem;
 	font-size: 1rem;
@@ -85,7 +90,7 @@ li {
 
 
 .navbar .nav-item .nav-link {
-	color: #eee;
+	color: var(--paragraph);
 	text-decoration: none;
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
@@ -103,8 +108,8 @@ li {
 		linear,
 		left top,
 		left bottom,
-		from(#0ee951),
-		to(#00dabf)
+		from(var(--tertiary)),
+		to(var(--paragraph))
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -113,16 +118,16 @@ li {
 }
 
 .navbar .fa-stack-1x {
-	color: #ffffff;
+	color: var(--background-tertiary);
 	transition: all 0.2s ease;
 }
 
 .navbar .fa-stack:hover .fa-stack-2x {
-  	color: var(--primary);
+  	color: var(--main);
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
-  	color: var(--primary);
+  	color: var(--main);
 }
 
 .navbar .navbar-toggler {
