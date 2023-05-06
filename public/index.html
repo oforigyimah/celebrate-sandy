@@ -53,7 +53,7 @@
     <script src="https://kit.fontawesome.com/6fa02a4a19.js" crossorigin="anonymous"></script>
   </head>
   <body>
-      <header>
+      <header id="header">
       <!-- Navigation -->
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
         <div class="container">
@@ -103,17 +103,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#plans">Plans</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
-                        
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -315,13 +304,64 @@
         </ul>
       </div>
 
-      <!-- facebook button -->
-      <div
-        class="fb-like"
-        data-share="true"
-        data-width="450"
-        data-show-faces="true"
-      ></div>
+      
+        <!-- Contact -->
+        <section class="contact d-flex align-items-center py-5" id="contact">
+          <div class="container-fluid text-light">
+              <div class="row">
+                  <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5" data-aos="fade-right">
+                      <div style="width:90%">
+                          <div class="text-center text-lg-start py-4 pt-lg-0">
+                              <p>DIFRA</p>
+                              <h2 class="py-2">Dicta mollitia totam</h2>
+                              <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
+                          </div>
+                          <div>
+                              <div class="row" >
+                                  <div class="col-lg-6">
+                                      <div class="form-group py-2">
+                                          <input type="text" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Enter name">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <div class="form-group py-2">
+                                          <input type="email" class="form-control form-control-input" id="exampleFormControlInput2" placeholder="Enter phone number">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group py-1">
+                                  <input type="email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Enter email">
+                              </div>
+                              <div class="form-group py-2">
+                                  <textarea class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                              </div>
+                          </div>
+                          <div class="my-3">
+                              <a class="btn form-control-submit-button" href="#your-link">Submit</a>
+                          </div>
+                      </div> <!-- end of div -->
+                  </div> <!-- end of col -->
+                  <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                      <img class="img-fluid d-none d-lg-block" src="./assets/images/contact.jpg" alt="contact">
+                  </div> <!-- end of col -->
+              </div> <!-- end of row -->
+          </div> <!-- end of container -->
+      </section> <!-- end of contact -->
+
+      <!-- Bottom -->
+      <div class="bottom py-2 text-light" >
+        <div class="container d-flex justify-content-between">
+            <div>
+                <p>Copyright © Ofori Gyimah</p>
+            </div>
+            <div>
+                <i class="fab fa-cc-visa fa-lg p-1"></i>
+                <i class="fab fa-cc-mastercard fa-lg p-1"></i>
+                <i class="fab fa-cc-paypal fa-lg p-1"></i>
+                <i class="fab fa-cc-amazon-pay fa-lg p-1"></i>
+            </div>
+        </div>
+    </div> <!-- end of bottom -->
 
       <!-- Back To Top Button -->
       <button onclick="topFunction()" id="myBtn">
@@ -332,6 +372,7 @@
     <!-- JS -->
     
     <script src="./src/js/f-card.js"></script>
+    <script src="./src/js/cards.js"></script>
     <script src="./src/js/magic.js"></script>
     <script src="./src/js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./src/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->

@@ -33,8 +33,8 @@ li {
 /*     Navigation     */
 /**********************/
 .navbar {
-	font-weight: 500;
-	font-size: 0.875rem;
+	font-weight: 400;
+	font-size: 0.775rem;
 	line-height: 0.875rem;
 	background-color: var(--primary);
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
@@ -52,9 +52,9 @@ li {
 
 .navbar .logo-text {
 	color: pink;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1rem;
-	font-size: 1.575rem;
+	font-size: 1rem;
 	text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ li {
 	visibility: hidden;
 	padding-right: 1rem;
 	padding-left: 1rem;
-	background-color: white;
+	background-image: url("../img/sandy1.jpg");
 	transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
@@ -83,35 +83,6 @@ li {
 	margin-bottom: 0.5rem;
 }
 
-
-.navbar .dropdown-menu {
-	border: none;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	background-color: var(--primary);
-}
-
-.navbar .dropdown-item {
-	color: #eee;
-	font-weight: 500;
-	font-size: 0.875rem;
-	line-height: 0.875rem;
-	padding-top: 0.625rem;
-	text-decoration: none;
-	padding-bottom: 0.625rem;
-}
-
-.navbar .dropdown-item:hover {
-  	background-color: var(--primary);
-}
-
-.navbar .dropdown-divider {
-	width: 100%;
-	height: 1px;
-	border: none;
-	margin: 0.5rem auto 0.5rem auto;
-	background-color: var(--primary-light);
-}
 
 .navbar .nav-item .nav-link {
 	color: #eee;
@@ -247,6 +218,7 @@ li {
 		width: auto;
 		padding-right: 0;
 		padding-left: 0;
+		background-image: none;
 		background-color: transparent;
 		overflow-y: visible;
 		visibility: visible;
@@ -287,6 +259,10 @@ li {
 }
 
 @media only screen and (max-width: 540px) {
+
+	.container {
+		width: fit-content;
+	}
 	h1 {
 		font-size: 30px;
 	}

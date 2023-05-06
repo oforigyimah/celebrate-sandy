@@ -50,6 +50,11 @@ let spaceIndex = 1;
 const groups = document.getElementsByClassName("card-group");
 
 const handleLoveClick = () => {
+  if (spaceIndex % 3 === 0)
+  {
+    console.log("Hello world");
+    randAssign();
+  }
   spaceIndex++;
   const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
   
@@ -60,12 +65,8 @@ const handleLoveClick = () => {
   
   nextGroup.dataset.status = "becoming-active-from-before";
  
-  if (spaceIndex % 3 === 0)
-  {
-    console.log("Hello world");
-    randAssign();
-  }
-  
+ 
+   
   setTimeout(() => {
     nextGroup.dataset.status = "active";
     activeIndex = nextIndex;
@@ -73,6 +74,11 @@ const handleLoveClick = () => {
 }
 
 const handleHateClick = () => {
+  if (spaceIndex % 3 === 0)
+  {
+    console.log("Hello world");
+    randAssign();
+  }
   spaceIndex--;
   const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
   
