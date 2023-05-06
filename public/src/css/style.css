@@ -63,9 +63,40 @@ h1 {
 	font-style: italic;
 }
 
+/* Section Background */
+.home,
+.about,
+.services,
+.plans,
+.work,
+.contact {
+	height: 110vh;
+	position: relative;
+}
+
+.services,
+.work,
+.contact,
+.testimonial,
+.footer {
+  	background-color: var(--primary);
+}
+
+.about,
+.plans,
+.company,
+.newsletter,
+.location {
+  	background-color: var(--primary-light);
+}
+
+.bottom {
+  	background-color: black;
+}
+
 /* Media queries */
 @media (min-width: 601px) {
-	.container {
+	body {
 		max-width: 800px;
 		margin: 0 auto;
 	}
