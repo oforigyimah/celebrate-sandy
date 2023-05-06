@@ -11,16 +11,11 @@
 /* Basic styles */
 body {
 	font-family: 'Poppins', sans-serif;
+	background-image: var(--background-gradient);
 }
 
 h2 {
   text-align: center;
-}
-
-.container {
-	padding: 20px;
-	background-image: var(--background-gradient);
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {

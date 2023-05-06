@@ -35,6 +35,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./src/css/aos.min.css" rel="stylesheet">
+    <link href="./src/css/swiper.css" rel="stylesheet">
+    <link href="./src/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/card.css">
     <link rel="stylesheet" href="./src/css/magic.css">
@@ -47,11 +53,10 @@
     <script src="https://kit.fontawesome.com/6fa02a4a19.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
       <header>
 
         <!-- Navigation bar-->    
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <!-- <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
           <div class="nav-container">
             <a class="navbar-brand logo-text" href="#">    
                  Happy Birthday <span class="magic">
@@ -98,9 +103,72 @@
               </li>
           </ul>
 
-      </div> <!-- end of navbar-collapse -->
-      </div> <!-- End of container -->
-      </nav> <!-- End of Navigation bar-->
+      </div> 
+      </div> 
+      </nav>  -->
+
+      <!-- Navigation -->
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text" href="index.html">Name</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Plans</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
       </header>
       <p>
         Dear Sandra, I hope this website makes your birthday extra special. Here
@@ -285,14 +353,24 @@
         data-width="450"
         data-show-faces="true"
       ></div>
-     
-    </div>
+
+      <!-- Back To Top Button -->
+      <button onclick="topFunction()" id="myBtn">
+        <img src="./src/img/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
 
     <!-- JS -->
     
     <script src="./src/js/f-card.js"></script>
     <script src="./src/js/magic.js"></script>
-    <script src="./src/js/cards.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./src/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./src/js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./src/js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./src/js/nav.js"></script>
+
+
     <script src="./src/js/script.js"></script>
 
 
