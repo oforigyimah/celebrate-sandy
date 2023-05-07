@@ -33,6 +33,7 @@ h1 {
 /****************/
 .home {
 	position: relative;
+	color: var(--paragraph);
 	/* background-color: #000021; */
 }
 
