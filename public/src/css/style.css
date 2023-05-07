@@ -42,6 +42,11 @@ li {
 	list-style-type: none;
 }
 
+.headline, .para{
+	color: var(--paragraph);
+	font-weight: bolder;
+}
+
 .navbar-nav a:hover,
 .footer a:hover,
 .footer .fab:hover {
@@ -514,8 +519,10 @@ li {
 	animation: scale 700ms ease forwards;
 	display: block;
 	height: var(--size);
+	/*noinspection CssUnresolvedCustomProperty*/
 	left: var(--star-left);
 	position: absolute;
+	/*noinspection CssUnresolvedCustomProperty*/
 	top: var(--star-top);
 	width: var(--size);
 }
