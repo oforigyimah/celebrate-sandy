@@ -1,7 +1,7 @@
 const pictures = [];
 
 for (let i = 1; i < 43; i++){
-    pictures.push(`url(/public/src/img/sandy${i}.jpg)`)
+    pictures.push(`url(/src/img/sandy${i}.jpg)`)
 }
 
 
